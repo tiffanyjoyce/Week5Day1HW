@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>FAV 5!!!</h1>
+<div class="container">
+  <div class="row">
+    {% for f in fav_5 %}
+    <div class="col-6">
+      <p>{{  f.name  }}</p>
+    </div>
+    {% endfor %}
+    
+  </div>
+</div>
+
+{% endblock %}
